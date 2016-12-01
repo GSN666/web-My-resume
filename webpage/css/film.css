@@ -1,0 +1,83 @@
+@charset "utf-8";
+
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	background: url(../images/dianying.jpg) no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+	background-size: 100% 100%;
+	-webkit-background-size: 100% 100%;
+	-moz-background-size: 100% 100%;
+	-o-background-size: 100% 100%;
+}
+#main {
+	width: 960px;
+	height: 600px;
+	border: 1px solid #ccc;
+	top: calc(50% - 300px);
+	left: calc(50% - 480px);
+	position: absolute;
+}
+
+#main #title {
+	height: 30px;
+	text-align: center;
+	color: #fff;
+	line-height: 30px;
+	background: #613712;
+	font-size: 20px;
+	font-family: "微软雅黑";
+}
+
+#main #content {
+	width: 580px;	
+	font-family: "微软雅黑";
+	line-height: 1.5;
+	font-size: 14px;
+	margin: 0 auto;
+	margin-top: 100px;
+}
+
+#main #content h1 {
+	font-size: 22px;
+}
+
+#main #content #pic {
+	width: 656px;
+	overflow: hidden;
+}
+
+#main #content #pic img {
+	display: block;
+	float: left;
+	margin-right: 60px;
+	padding: 2px;
+	cursor: pointer;
+}
+
+#main #content #pic img.select {
+	padding: 0px;
+	border: 2px solid yellow;
+}
+
+#main #content #biaoti {
+	margin-top: 100px;
+}
+
+#main #content #biaoti .wenzi .pingfen {
+	position: relative;
+	height: 17px;
+	line-height: 17px;
+}
+
+#main #content #biaoti .wenzi .juqing {
+	color: #69A565;
+	font-size: 16px;
+}
+
+#main #content #biaoti .wenzi .neirong {
+	text-indent: 2em;	
+}

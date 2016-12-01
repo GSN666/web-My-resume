@@ -1,0 +1,102 @@
+@charset "utf-8";
+/* 统一设置 */
+*{
+	padding:0;
+	margin:0;
+}
+ul,li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+	color:#000;
+}
+body {
+	background: url(../images/baidu.jpg) no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+	background-size: 100% 100%;
+	-webkit-background-size: 100% 100%;
+	-moz-background-size: 100% 100%;
+	-o-background-size: 100% 100%;
+}
+/* 最外层容器 */
+#container{
+	width:960px;
+	margin:100px auto;
+	position:relative;
+	text-align: center;
+}
+#container img{
+	width:300px;
+	display: block;
+	margin:30px auto;
+}
+#search_wraper{
+	height:38px;
+	line-height: 38px;
+	width:637px;
+	margin:0 auto;
+	position:relative;
+}
+#search_wraper input[type=text]{
+	width:521px;
+	height:20px;
+	padding:8px 7px;
+	border:1px solid #ccc;
+	font-size: 16px;
+	display: block;
+	float:left;
+}
+#search_wraper input[type=text]:hover{
+	border:1px solid #999;
+}
+#search_wraper input[type=text]:focus{
+	background: #f3faff;
+}
+#search_wraper input[type=button]{
+	outline: none;
+	border: none;
+	width:100px;
+	height:38px;
+	line-height: 38px;
+	background: #3385ff;
+	color:#fff;
+	font-size: 16px;
+	cursor: pointer;
+	display: block;
+	float:left;
+}
+#search_wraper input[type=button]:hover{
+	background: #2d76e3;
+}
+#searchTips{
+	position: absolute;
+	top:38px;
+	width:537px;
+	font-size: 12px;
+	border: 1px solid #ccc;
+	text-align: left;
+	background: #fff;
+	display: none;
+}
+#searchTips li{
+	padding-left: 5px;
+	color:#789;
+	line-height: 38px;
+	cursor: pointer;
+}
+#searchTips li:hover{
+	background: #eee;
+}
+#searchTips li:hover > a{
+	display: block;
+}
+#searchTips li > a{
+	float:right;
+	margin-right: 5px;
+	display: none;
+}
+#searchTips li.highlight{
+	background: #eee;
+}

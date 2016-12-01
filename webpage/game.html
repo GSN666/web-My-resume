@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>连连看游戏</title>
+	<link rel="stylesheet" type="text/css" href="css/game.css">
+	<script type="text/javascript" src="js/game.js"></script>
+</head>
+<body>
+	
+	<div id="container">
+
+		<script type="text/javascript">
+			document.write('<ul>');
+			for (var i = 0;i <= 35;i ++) {
+				document.write('<li>');
+				document.write('<a href="javascript:showImage(' + i + ')">');
+				document.write('<img src="images/game/img0.gif" id="img' + i + '">');			
+				document.write('</a>');
+				document.write('</li>');
+			}
+			document.write('</ul>');
+		</script>
+
+		<input id="startBtn" type="button" value="单击开始" onclick="init();">
+
+		<ul>
+			<li><img src="images/game/img1.gif" alt=""></li>
+			<li><img src="images/game/img2.gif" alt=""></li>
+			<li><img src="images/game/img3.gif" alt=""></li>
+			<li><img src="images/game/img4.gif" alt=""></li>
+			<li><img src="images/game/img5.gif" alt=""></li>
+			<li><img src="images/game/img6.gif" alt=""></li>
+			<li><img src="images/game/img7.gif" alt=""></li>
+			<li><img src="images/game/img8.gif" alt=""></li>
+			<li><img src="images/game/img9.gif" alt=""></li>
+			<li><img src="images/game/img10.gif" alt=""></li>
+			<li><img src="images/game/img11.gif" alt=""></li>
+			<li><img src="images/game/img12.gif" alt=""></li>
+			<li><img src="images/game/img13.gif" alt=""></li>
+			<li><img src="images/game/img14.gif" alt=""></li>
+			<li><img src="images/game/img15.gif" alt=""></li>
+			<li><img src="images/game/img16.gif" alt=""></li>
+			<li><img src="images/game/img17.gif" alt=""></li>
+			<li><img src="images/game/img18.gif" alt=""></li>
+		</ul>
+	</div>
+
+</body>
+</html>

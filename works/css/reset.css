@@ -1,0 +1,81 @@
+@charset "utf-8";
+
+/*全局设置*/
+*{
+	margin: 0px;
+	padding: 0px;
+}
+body{
+	font-family: Tahoma,Arial,"Lantinghei SC","Microsoft YaHei","微软雅黑",sans-serif;
+    color: #333;
+    background: #f2f2f2;
+}
+ul,li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+	color: #000;
+}
+a:hover{
+	text-decoration: none;
+}
+.clearfix:after{
+	content: '';
+	display: block;
+	clear: both;
+}
+/*模态层*/
+.layer{
+	display: block;
+	background: rgba(0,0,0,0.7);
+	width: 100%;
+	z-index: 10000000000;
+	position: fixed;
+	left: 0px;
+	top: 0px;
+}
+.layer img{
+	display: block;
+	width: 40%;
+	height: 60%;
+	position: absolute;
+	left: 30%;
+	top: 20%;
+}
+/*网页头部*/
+.header_top{
+	height:35px;
+	background: #F5F5F5;
+	padding: 0px 80px;
+}
+.header_content{
+	height:35px;
+	line-height: 35px;
+	margin:0px auto;
+	font-size: 12px;
+	position: relative;
+}
+.header_content ul li{
+	float: left;
+	display: block;
+	padding-right: 30px;
+}
+.header_content ul li a {
+	color:#666;
+}
+.header_left{
+	position: absolute;
+	left: 0px;
+}
+.header_left a:hover{
+	color: red;
+}
+.header_right{
+	position: absolute;
+	right:0px;
+}
+.header_right a:hover{
+	color: #38b5f9;
+}
+/*网页头部结束*/

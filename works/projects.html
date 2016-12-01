@@ -1,0 +1,523 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>PROJECTS</title>
+	<!-- 视口设置 -->
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+	<!-- IE优化 -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!-- 判断，如果是IE9以下，引入兼容h5标签的js文件，注意空格的位置 -->
+	<!--[if lt IE 9]>
+	<script type="text/javascript" src="js/html5shiv.min.js"></script>
+	<script type="text/javascript" src="js/respond.min.js"></script>
+	<![end if] -->
+
+	<!-- 引入bootstrap的css文件 -->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<!-- 引入字体样式的css文件 -->
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+	<!-- 引入样式设置的css文件 -->
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<!-- 引入登陆注册的css文件 -->
+	<link rel="stylesheet" type="text/css" href="css/logon-register.css">
+	<!-- 引入动画效果的css  -->
+	<link rel="stylesheet" type="text/css" href="js/wow/animate.css">
+</head>
+<body>
+	<!-- 登录界面开始 -->
+	<div id="login">
+		<div class="reg_login_panel">
+
+			<h3 class="logon">LOGIN</h3>
+			
+			<p><a href="#">&times;&nbsp;CLOSE</a></p>
+			<div class="input_container">
+				<input type="text" class="reg_login-input" id="login-name" placeholder="Please Your Email or Phone">
+			</div>
+			<div class="input_contaienr">
+				<input type="password" class="reg_login-input" id="login-pwd" placeholder="Please Your Password">
+			</div>
+
+			<div class="confirm" id="remeber">
+				<input type="checkbox"> Remember Me
+				<div class="remeber_msg">For your information security, please do not use this feature in Internet cafes or public computers！</div>
+			</div>
+
+			<input type="button" id="submit-login" value="Login">
+
+			<div class="reg_login-btn"  id="btn1">
+				There is no account？
+				<a href="#">Register now</a>
+			</div>
+		</div>
+	</div>
+	<!-- 登录界面结束 -->
+	<!-- 注册界面开始 -->
+	<div id="register">
+		<!-- 注册界面 -->
+		<div class="reg_login_panel">
+			<h3 class="logon">REGISTER</h3>
+			<p><a href="#">&times;&nbsp;CLOSE</a></p>
+			<form id="" method="post" action="">			
+				<div class="input_container">
+					<input type="text" class="reg_login-input" id="register-name" placeholder="Please Your Email or Phone">
+				</div>
+				<div class="input_container">
+					<input type="password" class="reg_login-input" id="register-pwd" placeholder="Please Your Password">
+				</div>
+				<div class="input_container">
+					<input type="text" class="reg_login-input" id="random-letter-input" placeholder="Security Code">
+					<div id="random-letter" class="reg_login-input">
+						<div>
+							<span></span>
+						</div>
+						<a class="icon icon-redo2"></a>
+					</div> 
+				</div>
+				
+				<div class="confirm" id="danxuan">
+					<input type="checkbox" checked> Have read and agree to the agreement
+					<div class="remeber_msg1">
+						Please accept user use agreement
+					</div>
+				</div>
+
+				<input type="button" id="submit-register" value="Register">
+
+				<div class="reg_login-btn" id="btn2">
+					Existing account？<a href="#">Login immediately</a>
+				</div>
+			</form>			
+		</div>
+	</div>
+	<!-- 注册界面结束 -->
+
+	<!-- 网页头部开始 -->
+	<div class="header">
+		<div class="container">
+			<div class="header_content">
+				<!-- 头部左侧 -->
+				<div class="header_left">
+					<ul>
+						<li>
+							<a href="index.html">Home Page</a>
+						</li>
+						<li>
+							<a href="projects.html">In The Community</a>
+						</li>
+					</ul>
+				</div>
+				<!-- 头部右侧 -->
+				<div class="header_right">
+					<ul>
+						<li>
+							<a href="" style="color:#38b5f9;">Sign In</a>
+						</li>
+						<li class="log">
+							<a href="#">Login</a>
+						</li>
+						<li class="reg">
+							<a href="#">Register</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 网页头部结束 -->
+	
+	<!-- 导航条开始 -->
+	<nav class="navbar">
+		<!-- 内部容器开始 -->
+		<div class="container nav_bar">
+			<!-- 导航头部开始 -->
+			<div class="navbar-header">
+				<!-- 响应式菜单按钮开始 -->
+				<button class="navbar-toggle navbar-default" data-toggle="collapse" data-target="#navMenu">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<!-- 响应式菜单按钮结束 -->
+				<!-- logo开始 -->
+				<a href="#" class="navbar-brand">ANIMAL WORLD</a>
+				<!-- logo结束 -->
+			</div>
+			<!-- 导航头部结束 -->
+			<!-- 导航菜单开始 -->
+			<div id="navMenu" class="collapse navbar-collapse">
+				<!-- 菜单列表开始 -->
+				<ul class="nav navbar-nav">
+					<li>
+						<a href="index.html">Home</a>
+					</li>
+					<li>
+						<a href="about.html">About</a>
+					</li>
+					<li  class="active">
+						<a href="projects.html">Projects</a>
+					</li>
+					<li class="dropdown">
+						<a href="gallery.html" class="dropdown-toggle" data-toggle="dropdown">
+							Gallery
+							<span class="caret"></span>
+						</a>
+						<ul class="dropdown-menu girls">
+							<li>
+								<a href="gallery.html">Gallery1</a>
+							</li>
+							<li>
+								<a href="gallery.html">Gallery2</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="contact.html">Contact</a>
+					</li>
+				</ul>
+				<!-- 菜单列表结束 -->
+				<!-- 表单开始 -->
+				<form class="navbar-form navbar-right visible-lg-block">
+					<div class="form-group">
+						<input type="text" value="" placeholder="Search...">
+						<input type="submit" value=""></div>
+				</form>
+				<!-- 表单结束 -->
+			</div>
+			<!-- 导航菜单结束 -->
+		</div>
+		<!-- 内部容器结束 -->
+	</nav>
+	<!-- 导航条结束 -->
+	<!-- 内容区开始 -->
+	<div class="project">
+		<div class="container">
+			<h2>Projects</h2>
+			<div class="project-works">
+				<div class="prjt-grid wow bounceInRight" data-wow-duration="1s" data-wow-delay="0.2s">
+					<div class="box maxheight">
+						<a href="#" data-toggle="modal" data-target="#p1"><img src="images/p1.jpg"></a>
+						<!-- 模态层开始 -->
+						<div class="modal fade" id="p1">
+							<div class="modal-dialog">
+								<div class="modal-content">
+									<div class="modal-body">
+										<img src="images/p1.jpg">
+										<button type="button" class="close" data-dismiss="modal">&times;</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- 模态层结束 -->
+						<div class="project-info">
+							<a href="#">Forest Road</a>
+							<p>
+								Kuspendisse laoreet augue iderti wer  interdum merti oremolo lectusto odio, sedorolu fringilla estero libero orciwe.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="prjt-grid wow bounceInDown" data-wow-duration="1s" data-wow-delay="0.2s">
+					<div class="box maxheight">
+						<a href="#" data-toggle="modal" data-target="#p2"><img src="images/p2.jpg"></a>
+						<!-- 模态层开始 -->
+						<div class="modal fade" id="p2">
+							<div class="modal-dialog">
+								<div class="modal-content">
+									<div class="modal-body">
+										<img src="images/p2.jpg">
+										<button type="button" class="close" data-dismiss="modal">&times;</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- 模态层结束 -->
+						<div class="project-info">
+							<a href="#">Forest Road</a>
+							<p>
+								Kuspendisse laoreet augue iderti wer  interdum merti oremolo lectusto odio, sedorolu fringilla estero libero orciwe.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="prjt-grid wow bounceInLeft" data-wow-duration="1s" data-wow-delay="0.2s">
+					<div class="box maxheight">
+						<a href="#" data-toggle="modal" data-target="#p3"><img src="images/p3.jpg"></a>
+						<!-- 模态层开始 -->
+						<div class="modal fade" id="p3">
+							<div class="modal-dialog">
+								<div class="modal-content">
+									<div class="modal-body">
+										<img src="images/p3.jpg">
+										<button type="button" class="close" data-dismiss="modal">&times;</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- 模态层结束 -->
+						<div class="project-info">
+							<a href="#">Forest Road</a>
+							<p>
+								Kuspendisse laoreet augue iderti wer  interdum merti oremolo lectusto odio, sedorolu fringilla estero libero orciwe.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="prjt-grid wow bounceInLeft" data-wow-duration="1s" data-wow-delay="0.5s">
+					<div class="box maxheight">
+						<a href="#" data-toggle="modal" data-target="#p5"><img src="images/p5.jpg"></a>
+						<!-- 模态层开始 -->
+						<div class="modal fade" id="p5">
+							<div class="modal-dialog">
+								<div class="modal-content">
+									<div class="modal-body">
+										<img src="images/p5.jpg">
+										<button type="button" class="close" data-dismiss="modal">&times;</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- 模态层结束 -->
+						<div class="project-info">
+							<a href="#">Forest Road</a>
+							<p>
+								Kuspendisse laoreet augue iderti wer  interdum merti oremolo lectusto odio, sedorolu fringilla estero libero orciwe.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="prjt-grid wow bounceInLeft" data-wow-duration="1s" data-wow-delay="0.5s">
+					<div class="box maxheight">
+						<a href="#" data-toggle="modal" data-target="#r2"><img src="images/r2.jpg"></a>
+						<!-- 模态层开始 -->
+						<div class="modal fade" id="r2">
+							<div class="modal-dialog">
+								<div class="modal-content">
+									<div class="modal-body">
+										<img src="images/r2.jpg">
+										<button type="button" class="close" data-dismiss="modal">&times;</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- 模态层结束 -->
+						<div class="project-info">
+							<a href="#">Forest Road</a>
+							<p>
+								Kuspendisse laoreet augue iderti wer  interdum merti oremolo lectusto odio, sedorolu fringilla estero libero orciwe.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="prjt-grid wow bounceInLeft" data-wow-duration="1s" data-wow-delay="0.5s">
+					<div class="box maxheight">
+						<a href="#" data-toggle="modal" data-target="#p4"><img src="images/p4.jpg"></a>
+						<!-- 模态层开始 -->
+						<div class="modal fade" id="p4">
+							<div class="modal-dialog">
+								<div class="modal-content">
+									<div class="modal-body">
+										<img src="images/p4.jpg">
+										<button type="button" class="close" data-dismiss="modal">&times;</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- 模态层结束 -->
+						<div class="project-info">
+							<a href="#">Forest Road</a>
+							<p>
+								Kuspendisse laoreet augue iderti wer  interdum merti oremolo lectusto odio, sedorolu fringilla estero libero orciwe.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="prjt-grid wow bounceInUp" date-wow-delay="1s">
+					<div class="box maxheight">
+						<a href="#" data-toggle="modal" data-target="#p7"><img src="images/p7.jpg"></a>
+						<!-- 模态层开始 -->
+						<div class="modal fade" id="p7">
+							<div class="modal-dialog">
+								<div class="modal-content">
+									<div class="modal-body">
+										<img src="images/p7.jpg">
+										<button type="button" class="close" data-dismiss="modal">&times;</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- 模态层结束 -->
+						<div class="project-info">
+							<a href="#">Forest Road</a>
+							<p>
+								Kuspendisse laoreet augue iderti wer  interdum merti oremolo lectusto odio, sedorolu fringilla estero libero orciwe.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="prjt-grid wow bounceInUp" date-wow-delay="1s">
+					<div class="box maxheight">
+						<a href="#" data-toggle="modal" data-target="#p8"><img src="images/p8.jpg"></a>
+						<!-- 模态层开始 -->
+						<div class="modal fade" id="p8">
+							<div class="modal-dialog">
+								<div class="modal-content">
+									<div class="modal-body">
+										<img src="images/p8.jpg">
+										<button type="button" class="close" data-dismiss="modal">&times;</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- 模态层结束 -->
+						<div class="project-info">
+							<a href="#">Forest Road</a>
+							<p>
+								Kuspendisse laoreet augue iderti wer  interdum merti oremolo lectusto odio, sedorolu fringilla estero libero orciwe.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="prjt-grid wow bounceInUp" date-wow-delay="1s">
+					<div class="box maxheight">
+						<a href="#" data-toggle="modal" data-target="#gl2"><img src="images/gl2.jpg"></a>
+						<!-- 模态层开始 -->
+						<div class="modal fade" id="gl2">
+							<div class="modal-dialog">
+								<div class="modal-content">
+									<div class="modal-body">
+										<img src="images/gl2.jpg">
+										<button type="button" class="close" data-dismiss="modal">&times;</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- 模态层结束 -->
+						<div class="project-info">
+							<a href="#">Forest Road</a>
+							<p>
+								Kuspendisse laoreet augue iderti wer  interdum merti oremolo lectusto odio, sedorolu fringilla estero libero orciwe.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- projects总结区域 -->
+	<div class="projects-overview">
+		<div class="container">
+			<h3>Projects Overview</h3>
+			<div class="projects-overview-grids">
+				<div class="col-md-4">
+					<div class="projects-overview-grd wow shake">
+						<img src="images/11.jpg" alt=" " class="img-responsive">
+						<div class="projects-overview-gd">
+							<h4>Itaque earum rerum hic tenetur labore et</h4>
+							<p>
+								Neque porro quisquam est, qui dolorem ipsum quia dolor 
+								sit amet, consectetur, adipisci velit, sed quia non numquam 
+								eius modi tempora.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="projects-overview-grd wow baunce" data-wow-duration="0.5s" data-wow-delay="0.3s">
+						<img src="images/15.jpg" alt=" " class="img-responsive">
+						<div class="projects-overview-gd">
+							<h4>Itaque earum rerum hic tenetur labore et</h4>
+							<p>
+								Neque porro quisquam est, qui dolorem ipsum quia dolor 
+								sit amet, consectetur, adipisci velit, sed quia non numquam 
+								eius modi tempora.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="projects-overview-grd wow swing" data-wow-duration="1s" data-wow-delay="0.5s">
+						<img src="images/13.jpg" alt=" " class="img-responsive">
+						<div class="projects-overview-gd">
+							<h4>Itaque earum rerum hic tenetur labore et</h4>
+							<p>
+								Neque porro quisquam est, qui dolorem ipsum quia dolor 
+								sit amet, consectetur, adipisci velit, sed quia non numquam 
+								eius modi tempora.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 内容区结束 -->
+
+	<!-- 网页底部开始  -->
+	<div class="footer">
+		<div class="container">
+			<div class="footer-sec">
+				<div class="col-md-4 ftr-grid1 wow bounceInRight" data-wow-delay="0.5s">
+					<h3>Latest Tweets</h3>
+					<div class="twts">
+						<h5>Nunc porta justo eu varius mattis.</h5>
+						<a href="mailto:example@gmail.com">http://www.example.com</a>
+					</div>
+					<div class="twts">
+						<h5>Nunc porta justo eu varius mattis.</h5>
+						<a href="mailto:example@gmail.com">http://www.example.com</a>
+					</div>
+				</div>
+				<div class="col-md-4 news-ltr wow bounceInUp" data-wow-delay="0.5s">
+					<h3>NewsLetter</h3>
+					<p>
+						Praesent ex lectus, luctus ut enim sed, scelerisque laoreet massa. Fusce rhoncus massa dignissim suscipit varius.
+				 Donec vel congue libero.
+					</p>
+					<form>
+						<input type="text" class="text" value="Enter Email" onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = 'Enter Email';}">
+						<input type="submit" value="Go">
+					</form>
+				</div>
+				<div class="col-md-4 social wow bounceInLeft" data-wow-delay="0.5s">
+					<h3>Social Media</h3>
+					<a href="#"> <i class="fa fa-facebook"></i>
+					</a>
+					<a href="#"> <i class="fa fa-twitter"></i>
+					</a>
+					<a href="#">
+						<i class="fa fa-dollar"></i>
+					</a>
+					<a href="#">
+						<i class="fa fa-google"></i>
+					</a>
+					<a href="#">
+						<i class="fa fa-youtube"></i>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 网页底部结束 -->
+	
+	<!-- wow滚屏动画 -->
+	<script type="text/javascript" src="js/wow/wow.js"></script>
+	<script type="text/javascript">
+		/*wow滚屏动画*/
+		if (!(/msie [6|7|8|9]/i.test(navigator.userAgent))){
+			var w = new WOW();
+			w.init();
+		}
+	</script>
+	<!-- 引入jquery的js文件 -->
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<!-- 引入bootstrap的js文件 -->
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+	<!-- 登陆注册的js -->
+	<script src="js/register.js"></script>
+	<script src="js/login.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>

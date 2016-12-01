@@ -1,0 +1,490 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>ABOUT US</title>
+	<!-- 视口设置 -->
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+	<!-- IE优化 -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!-- 判断，如果是IE9以下，引入兼容h5标签的js文件，注意空格的位置 -->
+	<!--[if lt IE 9]>
+	<script type="text/javascript" src="js/html5shiv.min.js"></script>
+	<script type="text/javascript" src="js/respond.min.js"></script>
+	<![end if] -->
+
+	<!-- 引入bootstrap的css文件 -->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<!-- 引入字体样式的css文件 -->
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+	<!-- 引入样式设置的css文件 -->
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<!-- 引入登陆注册的css文件 -->
+	<link rel="stylesheet" type="text/css" href="css/logon-register.css">
+	<!-- 引入动画效果的css  -->
+	<link rel="stylesheet" type="text/css" href="js/wow/animate.css">
+</head>
+<body>
+	<!-- 登录界面开始 -->
+	<div id="login">
+		<div class="reg_login_panel">
+
+			<h3 class="logon">LOGIN</h3>
+			
+			<p><a href="#">&times;&nbsp;CLOSE</a></p>
+			<div class="input_container">
+				<input type="text" class="reg_login-input" id="login-name" placeholder="Please Your Email or Phone">
+			</div>
+			<div class="input_contaienr">
+				<input type="password" class="reg_login-input" id="login-pwd" placeholder="Please Your Password">
+			</div>
+
+			<div class="confirm" id="remeber">
+				<input type="checkbox"> Remember Me
+				<div class="remeber_msg">For your information security, please do not use this feature in Internet cafes or public computers！</div>
+			</div>
+
+			<input type="button" id="submit-login" value="Login">
+
+			<div class="reg_login-btn"  id="btn1">
+				There is no account？
+				<a href="#">Register now</a>
+			</div>
+		</div>
+	</div>
+	<!-- 登录界面结束 -->
+	<!-- 注册界面开始 -->
+	<div id="register">
+		<!-- 注册界面 -->
+		<div class="reg_login_panel">
+			<h3 class="logon">REGISTER</h3>
+			<p><a href="#">&times;&nbsp;CLOSE</a></p>
+			<form id="" method="post" action="">			
+				<div class="input_container">
+					<input type="text" class="reg_login-input" id="register-name" placeholder="Please Your Email or Phone">
+				</div>
+				<div class="input_container">
+					<input type="password" class="reg_login-input" id="register-pwd" placeholder="Please Your Password">
+				</div>
+				<div class="input_container">
+					<input type="text" class="reg_login-input" id="random-letter-input" placeholder="Security Code">
+					<div id="random-letter" class="reg_login-input">
+						<div>
+							<span></span>
+						</div>
+						<a class="icon icon-redo2"></a>
+					</div> 
+				</div>
+				
+				<div class="confirm" id="danxuan">
+					<input type="checkbox" checked> Have read and agree to the agreement
+					<div class="remeber_msg1">
+						Please accept user use agreement
+					</div>
+				</div>
+
+				<input type="button" id="submit-register" value="Register">
+
+				<div class="reg_login-btn" id="btn2">
+					Existing account？<a href="#">Login immediately</a>
+				</div>
+			</form>			
+		</div>
+	</div>
+	<!-- 注册界面结束 -->
+	<!-- 网页头部开始 -->
+	<div class="header">
+		<div class="container">
+			<div class="header_content">
+				<!-- 头部左侧 -->
+				<div class="header_left">
+					<ul>
+						<li>
+							<a href="index.html">Home Page</a>
+						</li>
+						<li>
+							<a href="projects.html">In The Community</a>
+						</li>
+					</ul>
+				</div>
+				<!-- 头部右侧 -->
+				<div class="header_right">
+					<ul>
+						<li>
+							<a href="" style="color:#38b5f9;">Sign In</a>
+						</li>
+						<li class="log">
+							<a href="#">Login</a>
+						</li>
+						<li class="reg">
+							<a href="#">Register</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 网页头部结束 -->
+
+	<!-- 导航条开始 -->
+	<nav class="navbar">
+		<!-- 内部容器开始 -->
+		<div class="container nav_bar">
+			<!-- 导航头部开始 -->
+			<div class="navbar-header">
+				<!-- 响应式菜单按钮开始 -->
+				<button class="navbar-toggle navbar-default" data-toggle="collapse" data-target="#navMenu">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<!-- 响应式菜单按钮结束 -->
+				<!-- logo开始 -->
+				<a href="#" class="navbar-brand">ANIMAL WORLD</a>
+				<!-- logo结束 -->
+			</div>
+			<!-- 导航头部结束 -->
+			<!-- 导航菜单开始 -->
+			<div id="navMenu" class="collapse navbar-collapse">
+				<!-- 菜单列表开始 -->
+				<ul class="nav navbar-nav">
+					<li>
+						<a href="index.html">Home</a>
+					</li>
+					<li class="active">
+						<a href="about.html">About</a>
+					</li>
+					<li>
+						<a href="projects.html">Projects</a>
+					</li>
+					<li class="dropdown">
+						<a href="gallery.html" class="dropdown-toggle" data-toggle="dropdown">
+							Gallery
+							<span class="caret"></span>
+						</a>
+						<ul class="dropdown-menu girls">
+							<li>
+								<a href="gallery.html">Gallery1</a>
+							</li>
+							<li>
+								<a href="gallery.html">Gallery2</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="contact.html">Contact</a>
+					</li>
+				</ul>
+				<!-- 菜单列表结束 -->
+				<!-- 表单开始 -->
+				<form class="navbar-form navbar-right visible-lg-block">
+					<div class="form-group">
+						<input type="text" value="" placeholder="Search...">
+						<input type="submit" value=""></div>
+				</form>
+				<!-- 表单结束 -->
+			</div>
+			<!-- 导航菜单结束 -->
+		</div>
+		<!-- 内部容器结束 -->
+	</nav>
+	<!-- 导航条结束 -->
+	
+	<!-- banner容器开始 -->
+	<div class="about_banner row">
+		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 banner_row" >
+			<div class="banner-sec">
+				<div class="banner-grids">
+					<div class="col-md-7 banner-left wow bounceInRight" data-wow-delay="0.5s">
+						<div class="banner_lft_info">
+							<p>
+								<a href="index.html">Safari Park</a>
+							</p>
+							<h3>Donec elementum condimentum elementum pharetra porta.</h3>
+						</div>
+					</div>
+					<div class="col-md-5 banner-right wow bounceInLeft" data-wow-delay="0.5s">
+						<div class="bnr-right grid1">
+							<div class="banner_rght_info">
+								<p>
+									<a href="birds.html">Birds</a>
+								</p>
+								<h4>
+									Integer nisi nec malesuada  posuere risus id dui fringilla ullamcorper.
+								</h4>
+							</div>
+						</div>
+						<div class="bnr-right grid2">
+							<div class="banner_rght_info bnr_rht">
+								<p>
+									<a href="animal.html">Reptiles</a>
+								</p>
+								<h4>
+									Maecenas hendrerit nunc non malesuada  posuere risus id dui  diam commodo tristique.
+								</h4>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- banner容器结束 -->
+	<!--内容区开始-->
+	<div class="about">
+		<div class="container">
+			<h2>About Us</h2>
+			<div class="about-head">
+				<div class="col-md-7 content-left wow bounceInRight" data-wow-delay="0.5s">
+					<img src="images/founder.jpg" class="img-responsive" alt=""/>
+					<div class="about-info">
+						<h3>About Our Guidance</h3>
+						<p>
+							Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+						</p>
+					</div>
+				</div>
+				<div class="col-md-5 content-right wow bounceInLeft" data-wow-delay="0.5s">
+					<div class="cntnt-head">
+						<h3>Welcome</h3>
+					</div>
+					<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+						<div class="panel panel-default">
+							<div class="panel-heading" role="tab" id="headingOne">
+								<h4 class="panel-title">
+									<a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Assumenda est</a>
+								</h4>
+							</div>
+							<div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+								<div class="panel-body">
+									Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+								</div>
+							</div>
+						</div>
+						<div class="panel panel-default">
+							<div class="panel-heading" role="tab" id="headingTwo">
+								<h4 class="panel-title">
+									<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Itaque earum rerum</a>
+								</h4>
+							</div>
+							<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+								<div class="panel-body">
+									Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+								</div>
+							</div>
+						</div>
+						<div class="panel panel-default">
+							<div class="panel-heading" role="tab" id="headingThree">
+								<h4 class="panel-title">
+									<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Autem quibusdam</a>
+								</h4>
+							</div>
+							<div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+								<div class="panel-body">
+									Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+								</div>
+							</div>
+						</div>
+						<div class="panel panel-default">
+							<div class="panel-heading" role="tab" id="headingFour">
+								<h4 class="panel-title">
+									<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">Excepturi sint</a>
+								</h4>
+							</div>
+							<div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+								<div class="panel-body">
+									Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+								</div>
+							</div>
+						</div>
+						<div class="panel panel-default">
+							<div class="panel-heading" role="tab" id="headingFive">
+								<h4 class="panel-title">
+									<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">Voluptatum deleniti</a>
+								</h4>
+							</div>
+							<div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+								<div class="panel-body">
+									Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="ministries-sec">
+				<div class="col-md-6 what-do wow bounceInRight" data-wow-delay="0.5s">
+					<h3>What We Do</h3>
+					<ul>
+						<li>
+							<a href="#">Always free from repetition</a>
+						</li>
+						<li>
+							<a href="#">Vestibulum rhoncus nibh quis dui fermentum iaculis.</a>
+						</li>
+						<li>
+							<a href="#">The standard chunk of Lorem Ipsum</a>
+						</li>
+						<li>
+							<a href="#">In consequat dolor in lorem egestas ultrices.</a>
+						</li>
+						<li>
+							<a href="#">Ultrices rhoncus nibh quis dui.</a>
+						</li>
+					</ul>
+				</div>
+				<div class="col-md-6 activites wow bounceInLeft" data-wow-delay="0.5s">
+					<h3>Activities</h3>
+					<ul>
+						<li>
+							<a href="#">Always free from repetition</a>
+						</li>
+						<li>
+							<a href="#">Vestibulum rhoncus nibh quis dui fermentum iaculis.</a>
+						</li>
+						<li>
+							<a href="#">The standard chunk of Lorem Ipsum</a>
+						</li>
+						<li>
+							<a href="#">Ultrices rhoncus nibh quis dui.</a>
+						</li>
+						<li>
+							<a href="#">In consequat dolor in lorem egestas ultrices.</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 内容区结束 -->
+	<!-- 团队区域开始 -->
+	<div class="team">
+		<div class="container">
+			<h3 class="wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.3s">Our Team</h3>
+			<ul class="clearfix">
+				<li class="wow bounceInRight" data-wow-delay="0.5s">
+					<a href="#">
+						<div class="font">
+							<img src="images/a1.jpg" alt="">
+							<div class="tips">Animal Protection Expert</div>
+						</div>
+						<div class="back">
+							<h4>Phasellus scipitilifen lus.</h4>
+							<p>
+								Kuspendisse laoreet augue iderti wer  interdum merti oremolo lectusto odio, sedorolu fringilla estero libero.
+							</p>
+						</div>
+					</a>
+				</li>
+				<li class="wow bounceInRight" data-wow-delay="0.5s">
+					<a href="#">
+						<div class="font">
+							<img src="images/a2.jpg" alt="">
+							<div class="tips">Animal Protection Specialists</div>
+						</div>
+						<div class="back">
+							<h4>Phasellus scipitilifen lus.</h4>
+							<p>
+								Kuspendisse laoreet augue iderti wer  interdum merti oremolo lectusto odio, sedorolu fringilla estero libero.
+							</p>
+						</div>
+					</a>
+				</li>
+				<li class="wow bounceInLeft" data-wow-delay="0.5s">
+					<a href="#">
+						<div class="font">
+							<img src="images/a3.jpg" alt="">
+							<div class="tips">Animal Protection Expert</div>
+						</div>
+						<div class="back">
+							<h4>Phasellus scipitilifen lus.</h4>
+							<p>
+								Kuspendisse laoreet augue iderti wer  interdum merti oremolo lectusto odio, sedorolu fringilla estero libero.
+							</p>
+						</div>
+					</a>
+				</li>
+				<li class="wow bounceInLeft" data-wow-delay="0.5s">
+					<a href="#">
+						<div class="font">
+							<img src="images/a4.jpg" alt="">
+							<div class="tips">Animal Protection Specialists</div>
+						</div>
+						<div class="back">
+							<h4>Phasellus scipitilifen lus.</h4>
+							<p>
+								Kuspendisse laoreet augue iderti wer  interdum merti oremolo lectusto odio, sedorolu fringilla estero libero.
+							</p>
+						</div>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- 团队区域结束 -->
+	<!-- 网页底部开始  -->
+	<div class="footer">
+		<div class="container">
+			<div class="footer-sec">
+				<div class="col-md-4 ftr-grid1 wow bounceInRight" data-wow-delay="0.5s">
+					<h3>Latest Tweets</h3>
+					<div class="twts">
+						<h5>Nunc porta justo eu varius mattis.</h5>
+						<a href="mailto:example@gmail.com">http://www.example.com</a>
+					</div>
+					<div class="twts">
+						<h5>Nunc porta justo eu varius mattis.</h5>
+						<a href="mailto:example@gmail.com">http://www.example.com</a>
+					</div>
+				</div>
+				<div class="col-md-4 news-ltr wow bounceInUp" data-wow-delay="0.5s">
+					<h3>NewsLetter</h3>
+					<p>
+						Praesent ex lectus, luctus ut enim sed, scelerisque laoreet massa. Fusce rhoncus massa dignissim suscipit varius.
+				 Donec vel congue libero.
+					</p>
+					<form>
+						<input type="text" class="text" value="Enter Email" onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = 'Enter Email';}">
+						<input type="submit" value="Go">
+					</form>
+				</div>
+				<div class="col-md-4 social wow bounceInLeft" data-wow-delay="0.5s">
+					<h3>Social Media</h3>
+					<a href="#"> <i class="fa fa-facebook"></i>
+					</a>
+					<a href="#"> <i class="fa fa-twitter"></i>
+					</a>
+					<a href="#">
+						<i class="fa fa-dollar"></i>
+					</a>
+					<a href="#">
+						<i class="fa fa-google"></i>
+					</a>
+					<a href="#">
+						<i class="fa fa-youtube"></i>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 网页底部结束 -->
+
+	<!-- 引入jquery的js文件 -->
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<!-- 引入bootstrap的js文件 -->
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+	<!-- 登陆注册的js -->
+	<script src="js/register.js"></script>
+	<script src="js/login.js"></script>
+	<script src="js/main.js"></script>
+	<script type="text/javascript" src="js/wow/wow.js"></script>
+	<script type="text/javascript">
+		/*wow滚屏动画*/
+		if (!(/msie [6|7|8|9]/i.test(navigator.userAgent))){
+			var w = new WOW();
+			w.init();
+		}
+	</script>
+</body>
+</html>

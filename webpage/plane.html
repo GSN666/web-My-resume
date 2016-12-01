@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>飞机着陆</title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		body {
+			background: url(images/plane.jpg) no-repeat;
+			background-attachment: fixed;
+			background-position: center;
+			background-size: 100% 100%;
+			-webkit-background-size: 100% 100%;
+			-moz-background-size: 100% 100%;
+			-o-background-size: 100% 100%;
+		}
+		#item{
+			width: 250px;
+			height: 250px;
+			background: rgba(0,0,0,0.5);
+			position: fixed;
+			left: 0;
+			top: 0;
+			text-align: center;
+			line-height: 250px;
+		}
+		#pic{
+			width: 180px;
+			height: 220px;
+			position: fixed;
+		}
+	</style>
+	<script type="text/javascript">
+		window.onload = function(){
+			// 飞机图片对象
+			var pic = document.getElementById('pic');
+			// 视口大小
+			var clientW = document.documentElement.clientWidth;
+			var clientH = document.documentElement.clientHeight
+			// 初始化飞机的位置是正中间
+			pic.style.left = clientW / 2 - pic.offsetWidth / 2 + 'px';
+			pic.style.left = clientH / 2 - pic.offsetHeight / 2 + 'px'; 
+			// 当窗口大小改变事件
+			window.onresize = function(){
+				// 重新获得视口大小
+				clientW = document.documentElement.clientWidth;
+				clientH = document.documentElement.clientHeight
+
+				// 重新设置飞机的位置是正中间
+				pic.style.left = clientW / 2 - pic.offsetWidth / 2 + 'px';
+				pic.style.left = clientH / 2 - pic.offsetHeight / 2 + 'px';
+			}
+
+			// 方向键事件
+			document.onkeydown = function(e) {
+				e = e || window.event;
+				// 元素本身距离视口大小
+				var a = pic.offsetLeft;
+				var b = pic.offsetTop;
+				//左移 
+				if(e.keyCode == 37){
+					a -= 10;
+					if(a < 0){
+						a = 0;
+					}
+				} else if(e.keyCode == 38){//上移
+					b -= 10;
+					if(b < 0){
+						b = 0;
+					}
+				} else if(e.keyCode == 39){//右移
+					a += 10;
+					if(a + pic.offsetWidth > clientW){
+						a = clientW - pic.offsetWidth;
+					}		
+				} else if(e.keyCode == 40){//下移
+					b += 10;
+					if(b + pic.offsetHeight > clientH){
+						b = clientH - pic.offsetHeight;
+					}	
+				}
+				pic.style.left = a + 'px';
+				pic.style.top = b + 'px';
+
+			}
+			// 获得停机坪的对象
+			var item = document.getElementById('item');
+			// 随机移动停机坪
+			 function move () {										
+				vLeft = clientW - item.offsetWidth;
+				vTop = clientH - item.offsetHeight;
+				// 在试口范围内获得随机坐标			
+				var x = parseInt((vLeft + 1) * Math.random());
+				var y = parseInt((vTop + 1) * Math.random());
+				// 设置停机坪坐标
+				item.style.left = x + 'px';
+				item.style.top = y + 'px';
+			}
+			var timerId = setInterval(move,5000);
+
+			document.onkeyup = function(){
+				var item1 = item.offsetLeft;
+				var item2 = item.offsetTop;
+				var pic1 = pic.offsetLeft;
+				var pic2 = pic.offsetTop;
+
+				if(pic1 - item1 >= 0 && pic1 + pic.offsetWidth <= item1 + item.offsetWidth && pic2 - item2 >= 0 && pic2 + pic.offsetHeight <= item2 + item.offsetHeight){
+					alert('停机成功');
+					clearInterval(timerId);
+
+					var flag = confirm('是否再来一局');
+					if(flag){
+						timerId = setInterval(move,5000);
+						move();
+					} else{
+						window.close();
+					}
+				}
+					
+			}
+
+		}
+	</script>
+</head>
+<body>
+	<div id="item">
+		停机坪
+	</div>
+	<div id="pic">
+		<img src="images/plane.png">
+	</div>
+</body>
+</html>

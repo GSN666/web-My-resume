@@ -1,0 +1,349 @@
+@charset "utf-8";
+
+/*全局设置*/
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	font-family: 'Jockey One',Arial,Tahoma,"Microsoft YaHei","微软雅黑",sans-serif;
+    line-height: 1;
+    letter-spacing: 1;
+	font-weight: normal;
+}
+
+/*预加载样式 */
+.preloader {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 99999;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-flex-flow: row nowrap;
+	-ms-flex-flow: row nowrap;
+	flex-flow: row nowrap;
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+	background: none repeat scroll 0 0 #fff;
+	background: none repeat scroll 0 0 #f9f9f9;
+}
+.sk-spinner-wordpress.sk-spinner {
+	background-color: #3366CC;
+	width: 30px;
+	height: 30px;
+	border-radius: 30px;
+	position: relative;
+	-webkit-animation: sk-innerCircle 1s linear infinite;
+	animation: sk-innerCircle 1s linear infinite; }
+.sk-spinner-wordpress .sk-inner-circle {
+	display: block;
+	background-color: #fff;
+	width: 8px;
+	height: 8px;
+	position: absolute;
+	border-radius: 8px;
+	top: 5px;
+	left: 5px; 
+}
+@-webkit-keyframes sk-innerCircle {
+	0% {
+	-webkit-transform: rotate(0);
+	transform: rotate(0); 
+	}
+
+	100% {
+	-webkit-transform: rotate(360deg);
+	transform: rotate(360deg); 
+	} 
+}
+
+@keyframes sk-innerCircle {
+	0% {
+	-webkit-transform: rotate(0);
+	transform: rotate(0); 
+	}
+
+	100% {
+	-webkit-transform: rotate(360deg);
+	transform: rotate(360deg); 
+	} 
+}
+
+/*顶部区域*/
+.header{
+	width: 100%;
+	position: relative;
+}
+.banner{
+	overflow:hidden;
+	margin:0 auto !important;
+	background:#CACACA;
+}
+/* 轮播图*/
+.swiper-container {
+   	width:100%;
+   	height:760px;
+} 
+.swiper-slide img{
+	width: 100%;
+	height: 100%;
+}
+/*顶部文本区*/
+.bannerText{
+	z-index: 999;
+	position: absolute;
+	top:30%;
+	left: 0;
+	right: 0;
+	text-align: center;
+	border:1px solid #fff;
+	max-width: 960px;
+	background-color: rgba(0,0,0,0.2);
+	color:#fff;
+	padding: 30px 0;
+}
+.bannerText h1{
+	font-size: 70px;
+	line-height: 70px;
+	font-weight: 700;
+	margin: 0px;
+	padding-bottom: 8px
+}
+/*导航区域*/
+.menuItem{
+	width: 16.666%;
+}
+#navbar-example{
+	min-height: 60px;
+	line-height: 60px;
+	background: #262b37;
+	color:#c3c8d6;
+	border:none;
+	font-size:14px;
+	margin-bottom: 0;
+	text-transform:uppercase;
+}
+.navbar-nav{
+	float: none;
+}
+#navbar-example ul>li>a{
+  color:#c3c8d6;
+  padding:22px 25px;
+  line-height:18px;
+  text-align:center;
+}
+#navbar-example ul>li>a:hover{
+	color:#fff;
+}
+#navbar-example ul>li.active>a,#navbar-example ul>li.active>a:focus{
+	background:#1b1f29;
+	color:#c3c8d6;
+} 
+/* 标题区统一设置 */
+.all {
+	text-align: center;
+	position: relative;
+	margin: 100px 0;
+}
+h1{
+	font-size: 40px;
+	font-family: 'Jockey One', sans-serif;
+	color: #66CCFF;
+}
+hr{
+	border-color: #3366CC;
+	width: 100px;
+	margin: 60px auto;
+}
+/*自我介绍*/
+.about {
+	color: #fff;
+	margin-top:40px;
+}
+.about .introduce .col-sm-4 {
+	max-height:380px;
+	line-height:25px; 
+	font-size: 19px;
+	font-family: 'Jockey One', sans-serif;
+	overflow: hidden;
+}
+.introduce .col-sm-4 img {
+	padding-top: 20px;
+	transition:all 1s;
+}
+.introduce .col-sm-4:hover img {
+	transform:rotateY(-360deg);
+}
+.introduce .col-sm-4 p{
+	opacity: 0.5;
+}
+.introduce .col-sm-4:hover p {
+	transition:all 1s;
+	opacity: 1;
+}
+/*前端技术区域*/
+.skills-grid p{
+	margin: 34px 0 0 0;
+	font-size: 22px;
+	color: #fff;
+}
+/*网页介绍*/
+.experience {
+	color: #fff;
+}
+.experience .heading p {
+	font-size: 16px;
+	padding: 20px 0;
+	line-height: 30px;
+}
+.experience .col-sm-3 {
+	padding:0;
+	overflow: hidden;
+}
+.experience .col-sm-3 img{
+	width: 100%;
+	height: 100%;
+}
+.experience .col-sm-3 .overlay {
+	width:100%;
+	height:100%;
+	text-align: center;
+	padding:15% 0;
+	position: absolute;
+	bottom:-100%;
+	background: rgba(0,0,0,0.8);
+	color:#fff;
+}
+.overlay h3 {
+	font-weight:50;
+	font-size: 18px;
+}
+.overlay p {
+	font-size: 14px;
+	padding-top: 2px;
+}
+.overlay .folio-info i{
+	width:50px;
+	height:50px;
+	background:rgba(255,255,255,0.85);
+	border-radius: 50%;
+	color:#666;
+	line-height: 50px;
+	font-size: 16px;
+}
+.overlay .folio-info a i:hover{
+	background: #0cc;
+	color: red;
+}
+/* 文字动画样式 */
+.experience .col-sm-3:hover img{
+	transition:all 1.2s;
+	-webkit-transition:all 1.2s;
+	-moz-transition:all 1.2s;
+	-o-transition:all 1.2s;
+	-ms-transition:all 1.2s;
+	transform:scale(1.5,1.5);
+	-webkit-transform:scale(1.5,1.5);
+	-moz-transform:scale(1.5,1.5);
+	-o-transform:scale(1.5,1.5);
+	-ms-transform:scale(1.5,1.5);
+}
+.experience .col-sm-3:hover .overlay{
+	transition:all 0.5s;
+	-webkit-transition:all 0.5s;
+	-moz-transition:all 0.5s;
+	-o-transition:all 0.5s;
+	-ms-transition:all 0.5s;
+	position: absolute;
+	bottom:0;
+}
+/*项目介绍区域*/
+.works h4{
+	font-size: 36px;
+	font-family: 'Jockey One', sans-serif;
+}
+.works a{
+	width: 100%;
+	height: 100%;
+}
+.works a img{
+	width: 100%;
+	height: 100%;
+	position: relative;
+	overflow: hidden;
+	padding: 2px;
+}
+.works a:hover img{
+	padding: 0;
+	border: 2px solid orange;
+}
+.works p {
+	font-size: 18px;
+	text-align: left;
+	padding: 20px 10px;
+	color: #666;
+}
+.works p span{
+	font-weight: bold;
+	color: #333;
+}
+/* 联系我区域 */
+.contact{
+	margin-top: 30px;
+	padding: 40px;
+	min-height: 330px;
+	font-weight: bold;
+	text-align: left;
+}
+.contact h2 {
+	padding-bottom: 14px;
+	font-size:36px;
+}
+.contact {
+	background: #fff;
+}
+.contact p{
+	font-size: 16px;
+	font-family: 'Jockey One', sans-serif;
+	line-height: 1.5;
+	color: #333;
+}
+.contact .fa {
+	padding-right: 10px;
+}
+.mssage{
+	background: #474d5d;
+	padding: 0 20px;
+	margin-top: 30px;
+	min-height: 330px;
+	font-weight: bold;
+	text-align: left;
+}
+.mssage h1 {
+	padding: 20px 0;
+	color: #333;
+	text-align: center;
+}
+.mssage input,.mssage textarea{
+	background:#585f73;
+	color:#fff;
+	padding:10px 20px;
+	border:0;
+	margin-bottom: 10px;
+}
+.mssage button{
+	margin-top: 20px;
+	border:0;
+	padding:15px 20px;
+	font-weight: 300;
+	font-size: 18px;
+	border-radius: 5%;
+}

@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>xy手机助手</title>
+	<script type="text/javascript">
+		var userAgent = navigator.userAgent.toLowerCase();
+		if(userAgent.match(/iphone/) != null || userAgent.match(/android/) != null || userAgent.match(/ipad/) != null){
+			location.href = 'xy/xy-mobile.html';
+		} else{
+			location.href = 'xy/xy-pc.html';
+		}
+	</script>
+</head>
+<body>
+	<a href="xy/xy-pc.html">电脑版</a>
+	<a href="xy/xy-mobile.html">手机版</a>
+</body>
+</html>
